@@ -1,1 +1,0 @@
-# UMB---NEMO---Azure-Functions
