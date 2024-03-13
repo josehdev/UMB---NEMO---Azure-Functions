@@ -5,13 +5,13 @@
 import azure.functions as func
 
 from process_manifest import function_process_manifest
-from test_send_queue_messsage import function_send_queue_messsage
-from test_readBlobContainer import function_httptrig_readBlobContainer
+#from test_send_queue_messsage import function_send_queue_messsage
+#from test_readBlobContainer import function_httptrig_readBlobContainer
 
 #app = func.FunctionApp()
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 app.register_functions(function_process_manifest)
-app.register_functions(function_send_queue_messsage)
-app.register_functions(function_httptrig_readBlobContainer)
+#app.register_functions(function_send_queue_messsage)
+#app.register_functions(function_httptrig_readBlobContainer)
 
 
